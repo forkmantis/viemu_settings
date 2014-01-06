@@ -1,5 +1,3 @@
-
-
 " Does not WORK:
 " noremap <C-/> :vsc ReSharper.ReSharper_LineComment<CR>
 " noremap <A-/> :vsc ReSharper.ReSharper_BlockComment<CR>
@@ -69,6 +67,28 @@ noremap ,gN :vsc ReSharper.ReSharper_GotoPreviousOccurence <return>
 
 map <C-t> gS:vsc ReSharper.ReSharper_GotoType<CR>
 
+"-------------------------------------------------------------------------------
+" Resharper Introduce
+"-------------------------------------------------------------------------------
+noremap ,ip :vsc ReSharper.ReSharper_IntroParameter <return>
+noremap ,if :vsc ReSharper.ReSharper_IntroduceField <return>
+noremap ,iv :vsc ReSharper.ReSharper_IntroduceVariable <return>
+
+"-------------------------------------------------------------------------------
+" Resharper Misc
+"-------------------------------------------------------------------------------
+noremap ,sw :vsc ReSharper.ReSharper_SurroundWith <return>
+noremap ,fse :vsc ReSharper.ReSharper_LocateItemInFileExplorer <return>
+noremap ,nt :vsc ReSharper.ReSharper_NavigateTo <return>
+noremap ,gc :vsc ReSharper.ReSharper_Generate <return>
+noremap ,it :vsc ReSharper.ReSharper_InspectThis <return>
+noremap ,qd :vsc ReSharper.ReSharper_QuickDoc <return>
+noremap ,le :vsc ReSharper.ReSharper_LocateInSolutionExplorer <return>
+
+
+"-------------------------------------------------------------------------------
+" Resharper Bookmarks
+"-------------------------------------------------------------------------------
 noremap `0 :vsc ReSharper_Bookmarks_GoToBookmark0 <return>
 noremap `1 :vsc ReSharper_Bookmarks_GoToBookmark1 <return>
 noremap `2 :vsc ReSharper_Bookmarks_GoToBookmark2 <return>
